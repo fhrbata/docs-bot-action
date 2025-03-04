@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run action
-        if: ${{ github.repository_owner == 'espressif' }}
+#        if: ${{ github.repository_owner == 'espressif' }}
         uses: ./
         env:
           # the secrets in this repository are for testing purposes only and are not the same as in repository the

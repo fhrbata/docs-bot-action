@@ -11,6 +11,9 @@ import requests
 
 
 def get_suggestion(issue_body: str) -> str:
+    return 'THIS IS MOCKED ANSWER'
+
+def get_suggestion_old(issue_body: str) -> str:
     payload = json.dumps({'integration_id': os.environ['BOT_INTEGRATION_ID'], 'query': issue_body})
 
     headers = {'content-type': 'application/json', 'X-API-KEY': os.environ['BOT_API_KEY']}

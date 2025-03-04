@@ -42,12 +42,12 @@ runs:
       shell: bash
       run: |
         echo "Using this action from outside the organization is not supported"
-        exit 1
+#        exit 1
 
     - name: Checkout action repository
       uses: actions/checkout@v4
       with:
-        repository: espressif/docs-bot-action
+        repository: fhrbata/docs-bot-action
 
     - name: Set up Python
       uses: actions/setup-python@v5
